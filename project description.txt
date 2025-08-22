@@ -1,0 +1,59 @@
+📝 Project Description
+Title: Transformer Monitoring and Control System
+Platform: Embedded Systems (PIC16F877A)
+Tools Used: MPLAB, Hi-Tech C, Proteus ISIS
+
+This project involves the design and implementation of a Transformer Monitoring and Control System using the PIC16F877A microcontroller. The system continuously monitors simulated transformer parameters—current and voltage—through the microcontroller’s built-in Analog-to-Digital Converter (ADC).
+
+When the monitored values exceed predefined safety thresholds (e.g., current > 50A, voltage > 240V), the system performs the following actions:
+
+🔔 Displays a warning message on a 16x2 LCD display
+
+📡 Sends real-time alerts via UART to a virtual terminal (simulated in Proteus)
+
+🔴 Turns OFF an indicator LED to indicate unsafe conditions
+
+To resume normal operation, the system requires a multi-stage security process using a 4x4 matrix keypad, including:
+
+Entry of a Call PIN
+
+Entry of an OTP (One-Time Password)
+
+Entry of a Final OTP to confirm task completion
+
+This access control mechanism ensures that only authorized personnel can reset the alert and safely restart transformer operations, simulating secure field-level maintenance in a power distribution system.
+
+📟 Key Functionalities
+Real-Time Monitoring: Continuously reads analog signals representing current and voltage.
+
+Fault Detection: Detects overcurrent and overvoltage by comparing ADC values to set limits.
+
+Alert Mechanism: Sends warning messages over UART and displays them on the LCD.
+
+Secure Access Control: Requires stepwise PIN and OTP entry for system reset.
+
+User Interface: LCD displays live readings, alerts, and instructions.
+
+LED Status Indicator: Visual cue for normal (ON) or fault (OFF) states.
+
+🧰 Hardware Components
+✅ PIC16F877A Microcontroller
+
+✅ 16x2 Alphanumeric LCD Display
+
+✅ 4x4 Matrix Keypad
+
+✅ Single LED (Fault Indicator)
+
+✅ UART Virtual Terminal (via Proteus Simulation)
+
+💻 Software Modules
+ADC Interface: For current and voltage simulation via analog channels (RA0 and RA1)
+
+LCD Display Control: For outputting live values and instructions
+
+Keypad Scanning Logic: Row-column technique to capture user input
+
+UART Communication: Sends serial alerts to the virtual terminal
+
+Authentication Logic: Implements Call PIN, OTP, and Final OTP validation give ME 1000 charaters  

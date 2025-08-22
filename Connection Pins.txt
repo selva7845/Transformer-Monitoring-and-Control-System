@@ -1,0 +1,46 @@
+✅ PIC16F877A Pin Connections
+PIC Pin	Connected To	Purpose
+Pin 11 (RD0)	Switch 1 (R1)	Set Hours
+Pin 12 (RD1)	Switch 2 (R2)	Set Minutes
+Pin 13 (RD2)	Switch 3 (R3)	Set Seconds
+Pin 14 (RD3)	Switch 4 (R4)	Start/Stop
+
+Pin 33 (RB0)	LCD RS	Register Select
+Pin 34 (RB1)	LCD RW  Read / write
+Pin 35 (RB2)	LCD EN	Enable Signal
+
+Pin 37 (RB4)	LED LIGHT
+
+Pin(15-26) (RC0 - RC7) LCD Data Line
+
+✅Keypad (4x4 Matrix):
+
+Column 1 → RB5 (Pin 38)
+
+Column 2 → RB6 (Pin 39)
+
+Column 3 → RB7 (Pin 40)
+
+Row A → RC0 (Pin 33)
+
+Row B → RC1 (Pin 34)
+
+Row C → RC2 (Pin 35)
+
+Row D → RC3 (Pin 36)
+
+✅ADC Inputs:
+
+Current Sensor (Potentiometer) → RA0/AN0 (Pin 2)
+
+Voltage Sensor (Potentiometer) → RA1/AN1 (Pin 3)
+
+✅LED Indicator:
+
+LED → RB3 (Pin 15) (through a current-limiting resistor)
+
+✅UART (Virtual Terminal):
+
+TX → RC6/TX (Pin 25)
+
+RX → RC7/RX (Pin 26)
